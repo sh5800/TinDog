@@ -10,7 +10,7 @@ body{
 }
 
 .container-fluid{
-    padding:3% 15%;
+    padding:3% 15% 7%;
     width:fit-content;
     height:auto;
 }
@@ -25,6 +25,8 @@ h1{
     font-size:3.5rem;
     line-height:1.5;
 }
+
+
 
 .navbar-brand{
     font-size: 2rem;
@@ -42,14 +44,20 @@ h1{
 }
 
 .iphone-mockup{
-
-    width:60%;
-    margin-top:60px;
+    position: absolute;
+    width:55%;
+    margin-top:40px;
     transform: rotate(25deg);
     -webkit-transform: rotate(25deg);
     -moz-transform: rotate(25deg);
     -ms-transform: rotate(25deg);
     -o-transform: rotate(25deg);
+    /* z-index:-1; */
+    right:30%;
+}
+
+.positioning{
+    position:relative;
 }
 
 #features{
@@ -58,7 +66,10 @@ h1{
   margin-right: 100px;
   margin-bottom: 75px; */
   /* margin:100px; */
-  padding:7% 15%
+  padding:7% 15%;
+  background-color:white;
+  position:relative;
+  /* z-index:1; */
 }
 
 
@@ -201,3 +212,19 @@ h2{
 .copyright{
     font-size:18px;
 }
+
+@media (max-width:1199px){
+    .iphone-mockup{
+        position:static;
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+}
+
+    #title{
+        text-align: center;
+    }
+}
+
